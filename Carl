@@ -1,0 +1,35 @@
+public class Rectangle{
+    private double length;
+    private double width;
+
+    /**
+     * @param length the length to set
+     */
+    public void setLength(double length) {
+        this.length = length;
+    }
+    /**
+     * @param width the width to set
+     */
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    /**
+     * @return the length
+     */
+    public double getLength() {
+        return length;
+    }
+    /**
+     * @return the width
+     */
+    public double getWidth() {
+        return width;
+    }
+
+    public Rectangle(double w, double l){
+        length = l;
+        width = w;
+    }
+    
+}
