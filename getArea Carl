@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+public class getArea{
+    public static double getArea(Circle [] list){
+        double area = 0;
+        for(int i = 0; i < list.length;i++){
+            area += list[i].getArea();
+        }
+        return area;
+    }
+
+    public static double getArea(ArrayList<Rectangle> list){
+        double area = 0;
+        for(int i = 0; i < list.size(); i++){
+            area += list.get(i).getArea();
+        }
+        return area;
+    }
+
+    public static double getTriangle(ArrayList<Triangle> list){
+        double area = 0;
+        for(int i = 0; i < list.size(); i++){
+            area += list.get(i).getArea();
+        }
+        return area;
+    }
+    public static void main(String[] args) {
+        Circle[] listCircleArea = new Circle[2];
+        listCircleArea[0] = new Circle(1);
+        listCircleArea[1] = new Circle(2);   
+
+        ArrayList<Rectangle> listRectangleArea = new ArrayList<Rectangle>();        
+        listR.add(new Rectangle(1,2));
+        listR.add(new Rectangle(2,3));
+
+        ArrayList<Triangle> listTriangleArea = new ArrayList<Triangle>();        
+        listT.add(new Triangle(1,2));
+        listT.add(new Triangle(2,3));
+    }
+}
